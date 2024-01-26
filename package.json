@@ -1,0 +1,21 @@
+{
+  "name": "minista-project",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "minista",
+    "build": "minista build",
+    "prepare": "panda codegen",
+    "prod": "npm run prepare && npm run build",
+    "preview": "minista preview"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.28.0",
+    "minista": "^3.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
